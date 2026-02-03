@@ -1,91 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    >
+    <title>Globetrotter Travel & Tours</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <!-- Hero Section -->
+    <header class="bg-primary text-white py-5 mb-4" id="hero">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-3">Globetrotter Travel &amp; Tours</h1>
+        <p class="lead mb-4">Adventure Awaits – Discover Your Next Journey With Us!</p>
+        <a href="#tours" class="btn btn-light btn-lg px-4">Explore Tours</a>
+      </div>
+    </header>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="container mb-5">
+      <h2 class="text-center mb-4">Featured Destinations</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/paris.jpg" class="card-img-top" alt="Eiffel Tower in Paris">
+            <div class="card-body">
+              <h5 class="card-title">Paris, France</h5>
+              <p class="card-text">Experience the romance and charm of the City of Lights with guided city tours and fine dining.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/tokyo.jpg" class="card-img-top" alt="Shibuya Crossing in Tokyo">
+            <div class="card-body">
+              <h5 class="card-title">Tokyo, Japan</h5>
+              <p class="card-text">Dive into a world of culture, technology, and culinary delights in bustling Tokyo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/maldives.jpg" class="card-img-top" alt="Beach in Maldives">
+            <div class="card-body">
+              <h5 class="card-title">Maldives</h5>
+              <p class="card-text">Relax on pristine beaches and enjoy crystal-clear waters in the world's most breathtaking islands.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
 
-    <div class="container my-5">
-      <h1>Hello, world!</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-5">
-          You've successfully loaded up the Bootstrap starter example.
-        </p>
-        <p>Feel free to download or copy-and-paste any parts of this example.</p>
-
-        <hr class="col-1 my-4">
-
-        <a href="https://getbootstrap.com" class="btn btn-primary">Read the Bootstrap docs</a>
-        <a href="https://github.com/twbs/examples" class="btn btn-secondary">View on GitHub</a>
+    <!-- Tours and Packages -->
+    <section id="tours" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Popular Tours &amp; Packages</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body">
+                <h5 class="card-title">European Explorer</h5>
+                <ul class="list-unstyled mb-3">
+                  <li>✓ 10 days, 3 countries</li>
+                  <li>✓ All-inclusive hotels</li>
+                  <li>✓ Guided city walks</li>
+                </ul>
+                <p class="card-text">From €2,499/person</p>
+                <a href="#contact" class="btn btn-primary w-100">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Asian Discovery</h5>
+                <ul class="list-unstyled mb-3">
+                  <li>✓ 7 days, 2 countries</li>
+                  <li>✓ Local culinary classes</li>
+                  <li>✓ Cultural excursions</li>
+                </ul>
+                <p class="card-text">From $1,799/person</p>
+                <a href="#contact" class="btn btn-primary w-100">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Island Getaway</h5>
+                <ul class="list-unstyled mb-3">
+                  <li>✓ 5 days, Maldives</li>
+                  <li>✓ Private beach villa</li>
+                  <li>✓ Daily snorkeling tours</li>
+                </ul>
+                <p class="card-text">From $2,199/couple</p>
+                <a href="#contact" class="btn btn-primary w-100">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
- 
-        <!--
-          PANDA ELEMENT SELECTION SCRIPT
-          ===============================
-          Captures all element clicks inside the iframe and sends metadata to Bubble via postMessage.
-          Metadata captured: url, width, height, alt
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-element-selection.js" defer></script>
+    <!-- Testimonials -->
+    <section id="testimonials" class="container py-5">
+      <h2 class="text-center mb-4">What Our Travelers Say</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Best trip of my life! Every detail was perfectly arranged and the guides were wonderful.</p>
+                <footer class="blockquote-footer mt-2">Sara M., <cite title="Customer from Canada">Canada</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Globetrotter made our honeymoon truly magical. Highly recommended for stress-free travel!</p>
+                <footer class="blockquote-footer mt-2">James &amp; Priya, <cite title="Customer from India">India</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!--
-          PANDA BRANDING SCRIPT
-          ====================
-          Handles Panda-specific branding, logos, placeholders, and runtime injection for the iframe/editor.
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-branding.js" defer></script>
-        <!--
-          PANDA AUTO RELOAD SCRIPT
-          ====================
-          Handles Panda HMR solution built on railway to hot reload changes in preview.
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script>
-        const es = new EventSource("/__hmr");
-        es.onmessage = () => location.reload();
-        </script>
+    <!-- Contact/CTA Section -->
+    <section id="contact" class="bg-primary text-white py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 mb-4 mb-md-0">
+            <h2 class="mb-3">Get Your Free Quote</h2>
+            <p>Ready for your next adventure or still have questions? Our expert team is here to help you plan the perfect getaway!</p>
+          </div>
+          <div class="col-md-5">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="interest" class="form-label">Interested In</label>
+                <select class="form-select" id="interest">
+                  <option>European Explorer</option>
+                  <option>Asian Discovery</option>
+                  <option>Island Getaway</option>
+                  <option>Custom Trip</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-light text-primary w-100">Request Quote</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-1">&copy; 2024 Globetrotter Travel &amp; Tours</p>
+        <small>123 Wanderlust Ave, Explore City &mdash; +1 (555) 102-3040 &mdash; info@globetrotter.com</small>
+      </div>
+    </footer>
 
+    <!-- Bootstrap core JS and dependencies -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
