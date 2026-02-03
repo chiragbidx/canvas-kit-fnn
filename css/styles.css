@@ -1,0 +1,94 @@
+/* Custom Styles for Globetrotter Travel & Tours Landing Page */
+
+/* Hero section override */
+#hero {
+  background: linear-gradient(120deg, #1c588b 0%, #1687a7 100%);
+  color: #fff;
+}
+
+#hero .btn-light {
+  color: #1687a7;
+  font-weight: 600;
+}
+
+/* Section headings */
+h2 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Cards */
+.card-title {
+  font-weight: 600;
+  color: #1687a7;
+}
+
+.card {
+  border-radius: 0.75rem;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+#tours .card,
+#testimonials .card {
+  background: #fff;
+}
+
+#tours .card-title {
+  color: #4d4d4d;
+}
+
+/* Testimonials */
+#testimonials blockquote {
+  font-size: 1.07rem;
+  font-style: italic;
+  color: #222c36;
+}
+
+#testimonials .card {
+  background-color: #f9fafb;
+}
+
+#contact {
+  background: linear-gradient(90deg, #1687a7 40%, #1c588b 90%);
+}
+
+#contact .form-label {
+  color: #fff;
+  font-weight: 500;
+}
+
+#contact .form-control,
+#contact .form-select {
+  border-radius: 0.4rem;
+  border: none;
+}
+
+#contact .btn-light {
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background: #131e2f !important;
+  color: #e0e8ee !important;
+}
+
+footer small {
+  color: #cdf0f6;
+  font-size: 0.97rem;
+}
+
+@media (max-width: 768px) {
+  #hero .display-4 {
+    font-size: 2.3rem;
+  }
+  .card-img-top {
+    height: 140px;
+  }
+}
